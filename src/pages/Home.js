@@ -1,10 +1,13 @@
 import React from "react";
 import vid from "../videos/home.mp4";
 import { Link } from "react-router-dom";
+import Planet from "./Home/Planet";
+import Land from "./Home/Land";
+import Introduce from "./Home/Introduce";
 
 function Home() {
   const st = {
-    main: "pt-[70px]",
+    main: "pt-[70px] overflow-hidden  ",
     video_bg: "w-full h-[100vh] top-[70px] relative z-[-10]",
     video: "object-cover w-full h-[700px]",
     shadow:
@@ -23,6 +26,9 @@ function Home() {
     live_img: "w-[90px] absolute left-[20px] top-[40px]",
     bottom_content2: "absolute top-[120px] left-[20px]",
     bg_content2_h1: "w-[80%] text-[19px] mb-[20px] text-[#e5e5e]",
+    advice:
+      "h-[70px] border w-[90%] mx-[auto] mt-[650px] text-white flex items-center justify-between border-x-0 border-1 border-slate-700",
+    advice_content: "flex items-center justify-between w-full",
   };
 
   return (
@@ -70,13 +76,27 @@ function Home() {
         </div>
       </div>
 
-      <div className="h-[200px] border w-full mt-[500px] text-white">
-        <h3>Ethereum</h3>
-        <img
-          src="https://blockchain.land/assets/image/small-elements/chain-blue-mark.svg"
-          alt=""
-        />
+      <div className={st.advice}>
+        <div className={st.advice_content}>
+          <h3>Ethereum</h3>
+          <img
+            src="https://blockchain.land/assets/image/small-elements/chain-blue-mark.svg"
+            alt=""
+            className="w-[10px]"
+          />
+          <h3>Binance Smart Chain</h3>
+          <img
+            src="https://blockchain.land/assets/image/small-elements/chain-blue-mark.svg"
+            alt=""
+            className="w-[10px]"
+          />
+          <h3>Lyan Chain</h3>
+        </div>
       </div>
+
+      <Planet />
+      <Land />
+      <Introduce />
     </div>
   );
 }
