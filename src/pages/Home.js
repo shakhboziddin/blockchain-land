@@ -7,18 +7,18 @@ import Introduce from "./Home/Introduce";
 
 function Home() {
   const st = {
-    main: "pt-[70px] overflow-hidden  ",
+    main: "pt-[70px] overflow-hidden  w-full",
     video_bg: "w-full h-[100vh] top-[70px] relative z-[-10]",
-    video: "object-cover w-full h-[700px]",
+    video: " w-full h-[700px] object-cover  ",
     shadow:
       "bg-[#000] absolute  shadow-2xl shadow-black h-[110px] bg-cover w-full soya",
     bg_content: "absolute px-[15px] text-white z-[90] top-[180px]",
     head2: "w-[60%]",
-    head1: "text-[40px] w-[50%] font-[500] line",
+    head1: "text-[40px] w-[70%] font-[500] line",
     btn_div:
       "bg-[url('https://blockchain.land/assets/image/btn-bg/btn-black.svg')] bg-no-repeat h-[40px]  w-[140px] bg-contain flex items-center justify-center text-white",
     bg_content2:
-      "bg-[url('https://blockchain.land/assets/image/hero/hero-card-bg.svg')] p-[20px] h-[150px] text-white flex items-center justify-start w-[340px] bg-no-repeat bg-contain absolute top-[450px] left-[100px]",
+      "bg-[url('https://blockchain.land/assets/image/hero/hero-card-bg.svg')] p-[20px] h-[150px] text-white flex items-center justify-start w-[full] bg-no-repeat bg-contain absolute top-[450px] left-[100px]",
     bottom_content:
       "w-[80%] bg-[url('https://blockchain.land/assets/image/hero/metaverse_mobile.png')] h-[600px] bg-no-repeat bg-contain",
     header: "text-[20px] mb-[40px]",

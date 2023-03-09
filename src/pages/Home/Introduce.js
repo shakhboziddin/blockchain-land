@@ -54,7 +54,7 @@ function Introduce() {
             Blockchain Land is a peer-to-peer network supported by very
             powerful, unshakable, and secure blockchains like ETH, BNB and LYC
             handled without any intermediation of third parties.
-          </p>
+          </p>    
         </div>
         <div className={st.blockchains_cards}>
           <div className={st.blockchains_card_bmb}>
@@ -68,7 +68,7 @@ function Introduce() {
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 }
 
